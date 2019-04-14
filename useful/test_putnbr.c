@@ -1,4 +1,6 @@
 
+// move below to test folder
+
 void ft_putchar(char c);
 
 void ft_putnbr(int n)

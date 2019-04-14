@@ -11,3 +11,6 @@ mkdir ex07
 mkdir ex08
 mkdir ex09
 mkdir ex10
+
+alias nnn="norminette -R CheckForbiddenSourceHeader"
+alias ls='ls -F'
