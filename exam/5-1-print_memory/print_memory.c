@@ -1,15 +1,15 @@
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-void	ft_putstr(char *s)
+void ft_putstr(char *s)
 {
 	while (*s)
 		ft_putchar(*s++);
 }
-void	ft_printhex(int n)
+void ft_printhex(int n)
 {
 	int c;
 
@@ -18,16 +18,17 @@ void	ft_printhex(int n)
 	c = n % 16 + (n % 16 < 10 ? '0' : 'a' - 10);
 	ft_putchar(c);
 }
-void	ft_printchars(unsigned char c)
+void ft_printchars(unsigned char c)
 {
 	ft_putchar((c > 31 && c < 127) ? c : '.');
 }
-void	print_memory(const void *addr, size_t size)
+
+void print_memory(const void *addr, size_t size)
 {
 	unsigned char *t = (unsigned char *)addr;
-	size_t		i = 0;
-	int			col;
-	size_t		tmp = 0;
+	size_t i = 0;
+	int col;
+	size_t tmp = 0;
 
 	while (i < size)
 	{
