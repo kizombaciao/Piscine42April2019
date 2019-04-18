@@ -1,0 +1,11 @@
+LINE0="95..31.6."
+LINE1=".1....5.9"
+LINE2=".4.5....."
+LINE3="..1.683.."
+LINE4="........."
+LINE5="..314.8.."
+LINE6=".....6.3."
+LINE7="....7.41."
+LINE8=".3.27..46"
+
+./aaa $LINE0 $LINE1 $LINE2 $LINE3 $LINE4 $LINE5 $LINE6 $LINE7 $LINE8
