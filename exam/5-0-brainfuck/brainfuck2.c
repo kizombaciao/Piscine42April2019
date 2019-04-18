@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 
 void brainfuck(char *str)
 {
@@ -19,9 +20,10 @@ void brainfuck(char *str)
             ++(*ptr);
         else if (*str == '-')
             --(*ptr);
+
         else if (*str == '.')
             write(1, ptr, 1);
-        else if (*str == '[' && *ptr == 0)
+        else if (*str == '[' && *ptr == 0) // trick used for brackets!
         {
             loop_count = 1;
             while (loop_count != 0)
@@ -33,7 +35,7 @@ void brainfuck(char *str)
                     ++loop_count;
             }
         }
-        else if (*str == ']' && *ptr != 0)
+        else if (*str == ']' && *ptr != 0) // for brackets in reverse!
         {
             loop_count = 1;
             while (loop_count != 0)
@@ -48,9 +50,34 @@ void brainfuck(char *str)
         str++;
     }
 }
+
+// ./aaa "abcdef"
+void test1(char *str)
+{
+    char *p;
+
+    p = str;
+    //p++;
+    str++;
+    printf("\n%c %c %c %c", ++(*str), (*str)++, (*str), *(str));
+    //output:  c c d d
+}
+
+// ./aaa "abcdef"
+void test2(char *str)
+{
+    char *p;
+
+    p = str;
+    p++;
+    printf("\n%c %c %c %c", (*p), (*p), (*p), ++(*p));
+    // output: b b b c
+}
+
 int main(int argc, char *argv[])
 {
     if (argc == 2)
-        brainfuck(argv[1]);
+        test(argv[1]);
+       //brainfuck(argv[1]);
     return (0);
 }

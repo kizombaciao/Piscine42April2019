@@ -40,6 +40,6 @@ unsigned char	swap_bits(unsigned char octet)
 
 int main(int argc, const char *argv[])
 {
-	print_bits(reverse_bits((unsigned char)123));
+	print_bits(reverse_bits((unsigned char)123)); // ???
 	return 0;
 }

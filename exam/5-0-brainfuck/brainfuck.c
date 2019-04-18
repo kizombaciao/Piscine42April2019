@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+// THIS BELOW CODE DOES NOT WORK!!!
 void	brainfuck(char *str)
 {
 	char	*ptr;
@@ -13,9 +14,9 @@ void	brainfuck(char *str)
 		else if (*str == '<')
 			ptr--;
 		else if (*str == '+')
-			*ptr++;
+			*ptr++; // same as ++(*ptr) ???
 		else if (*str == '-')
-			*ptr--;
+			*ptr--; // --(*ptr) ???
 		else if (*str == '[' && !*ptr)
 			while (*str != ']')
 				*str++;
