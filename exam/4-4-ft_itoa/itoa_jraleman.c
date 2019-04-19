@@ -13,7 +13,7 @@ char    *ft_itoa_base(int nbr)
 	
     len = 0;
 	n_tmp = nbr;
-	while (n_tmp)
+	while (n_tmp) // need to get the length of string for malloc
 	{
 		n_tmp /= 10;
 		len += 1;
@@ -29,11 +29,13 @@ char    *ft_itoa_base(int nbr)
 		return (NULL);
 	str[len] ='\0';
 	
-    while (nbr)
+    while (nbr) // go backward to avoid recursion!
 	{
 		str[len] = (n % 10) + '0';
 		nbr /= 10;
+		len--;
 	}
+	// str needs to include neg sign if negative.
 	return (str);
 }
 

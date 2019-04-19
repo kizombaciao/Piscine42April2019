@@ -25,3 +25,20 @@ int main()
     return 0;
 }
 
+/*
+char rb(char o)
+{
+    char r;
+    int i;
+
+    i = 8;
+    r = 0;
+    while (i > 0)
+    {
+        r = (r << 1) | (o & 1);
+        o = o >> 1;
+        i--;
+    }
+    ret(r);
+}
+*/

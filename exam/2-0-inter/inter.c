@@ -9,6 +9,7 @@ void solve(char *str1, char *str2) { // note, passed as single pointer
 	i = 0;
 	while (i < 128)
 		vf[i++] = 0; // initializing all vf to zero.
+
 	i = 0;
 	while (str2[i]) { // assign 1 to vf if the ascii appeared in str2
 		if (vf[(int)str2[i]] == 0) // typecast, using ascii as index
@@ -17,6 +18,7 @@ void solve(char *str1, char *str2) { // note, passed as single pointer
         }
         i++;
 	}
+	
     i = 0; // assign 2 if it has also appeared in str1
 	while (str1[i]) {
 		if (vf[(int)str1[i]] == 1) // now if it also appeared in str1

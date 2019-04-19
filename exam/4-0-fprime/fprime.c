@@ -24,7 +24,7 @@ int        ft_atoi(char *s)
     return (sign * (int)r);
 }
 // how does the code ensure that the factors are prime numbers???
-// why no isPrime() function calls???
+// why no isPrime() function calls? >> NEEDED BECAUSE NEED PRIME FACTOR, NOT JUST FACTOR
 void	fprime(unsigned int nb)
 {
 	unsigned	i;

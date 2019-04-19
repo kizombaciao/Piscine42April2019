@@ -32,3 +32,17 @@ int main(void)
     bin2(4); 
 } 
 
+void pb(char n)
+{
+    int i = 256;
+    while (i >>= 1)
+        if (o & i)
+            write 1
+        else
+        {
+            write 0
+        }
+        
+
+
+}

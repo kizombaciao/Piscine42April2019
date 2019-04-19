@@ -23,7 +23,8 @@ void brainfuck(char *str)
 
         else if (*str == '.')
             write(1, ptr, 1);
-        else if (*str == '[' && *ptr == 0) // trick used for brackets!
+
+        else if (*str == '[' && *ptr == 0) // trick used for brackets! why *ptr == 0 ???
         {
             loop_count = 1;
             while (loop_count != 0)

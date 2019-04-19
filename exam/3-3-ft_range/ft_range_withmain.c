@@ -66,7 +66,7 @@ int		*ft_range(int min, int max, int len)
 	while (max != min)
 		*s++ = max > min ? min++ : min--;
 	*s = min;
-	return (s - n);
+	return (s - n); // THIS GETS YOU BACK TO THE BEGINNING OF THE POINTER - CHECK!!!
 }
 
 int		main(int ac, char **av)

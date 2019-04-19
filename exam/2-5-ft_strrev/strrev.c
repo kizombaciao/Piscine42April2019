@@ -14,7 +14,7 @@ char *strrev(char *s)
     p = (char *)malloc(sizeof(char) * (len + 1));
     i = 0;
     while (i < len) {
-        p[i] = s[len - i - 1];
+        p[i] = s[(len - i) - 1]; // -1 is just an adjustment for index starting at 0.
         i++;
     }
     p[len] = '\0';

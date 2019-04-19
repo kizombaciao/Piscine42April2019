@@ -18,3 +18,24 @@ typedef struct    s_list
     struct s_list *next;
     void          *data;
 }                 t_list;
+
+
+// pseudo code
+
+int ft_ls(t_list *blist)
+{
+    int i;
+    t_list *p;
+
+
+    i = 0;
+    p = blist;
+    if p == 0
+        return (0)
+
+    while (p)
+    {
+        p = p->next;
+    }
+
+}

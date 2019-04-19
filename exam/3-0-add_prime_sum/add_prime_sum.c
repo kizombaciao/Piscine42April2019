@@ -26,8 +26,6 @@ int is_prime(int n) {
 			return (0); // not a prime
 	return (1); // a prime, since no divisor was found
 }
-
-// REVIEW THIS!
 void	add_prime_sum(int n) {
 	int	i;
 	int	count;
@@ -35,8 +33,7 @@ void	add_prime_sum(int n) {
 	if (n == 1) // 1 is not a prime!!!
 		count = 0;
 	i = 1;
-    // trick: to find prime inferior
-	while (++i <= n)
+	while (++i <= n) // trick: to find prime inferior
 		if (is_prime(i))
 			count += i; // cummulatively add prime inferiors
 	ft_putposnbr(count);

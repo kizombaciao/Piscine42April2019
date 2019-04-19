@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-// from base 10 to base 16
+// from base 10 to base 16 !!!
 
 int		ft_atoi(char *s)
 {

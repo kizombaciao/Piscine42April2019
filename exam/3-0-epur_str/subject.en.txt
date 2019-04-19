@@ -24,3 +24,8 @@ $
 $> ./epur_str "" | cat -e
 $
 $>
+
+// find strlen
+// remove spaces at end
+// get rid of spaces at the beginning
+// now we have a string with char at both ends

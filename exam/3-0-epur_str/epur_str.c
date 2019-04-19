@@ -37,18 +37,16 @@ void	epurstr(char *s) {
     
     // core code
     // len now reflects the string without spaces at both ends
+    // trick used to write spaces only once!
+    // if both are nonblanks, then it is true
+    // if 1st is blank and 2nd is not blank, it is still true
+    // if 1st is nonblank and 2nd is blank, it is still true
+    // NOTE, IF BOTH ARE BLANK, THEN NO WRITES!
+    // note, how *(s+1) is used for 2nd condition.
     while (len--)
-	{
-        // trick used to write spaces only once!
-        // if both are nonblanks, then it is true
-        // if 1st is blank and 2nd is not blank, it is still true
-        // if 1st is blank and 2nd is not blank, it is still true
-        // NOTE, IF BOTH ARE BLANK, THEN NO WRITES!
-        // note, how *(s+1) is used for 2nd condition.
+	{    
 		if (!ft_isblank(*s) || (*(s + 1) && !ft_isblank(*(s + 1))))
-        {
             write(1, s, 1);
-        }
         s++;
 	}
 }

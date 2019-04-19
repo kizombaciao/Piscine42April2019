@@ -55,7 +55,6 @@ int s_pop()
     return(stack[s_top++]);
 }
 
-
 // -1 if operator // +1 if alphabet
 int r(char inputchar)
 {

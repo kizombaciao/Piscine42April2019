@@ -25,7 +25,6 @@ void	ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 		i = i->next;
 	}
 }
-
 int func(void *p1, void *p2)
 {
     if (*p1 == *p2) {
@@ -33,9 +32,22 @@ int func(void *p1, void *p2)
     }
     return 1;
 }
-
 int main()
 {
     // how to use void pointer???
-    
+}
+
+void ft_list_remove_if(t_list **blist, void *data, int (*cmp)())
+{
+	tlist *c;
+	tlist *r;
+
+	c = *blist;
+	if (c && !cmp(c->data, data))
+	{
+		r = 
+	}
+
+	while (*blist && cmp())
+
 }
