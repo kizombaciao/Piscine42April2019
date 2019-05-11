@@ -6,7 +6,7 @@ int main()
     char c;
     
     while (i  < 26) {
-        1 % 2 == 0 ? c = 'Z' - i : c = 'z' - i;
+        (i % 2 == 0) ? c = 'Z' - i : c = 'z' - i;
         write(1, &c , 1);
         i++;
     }

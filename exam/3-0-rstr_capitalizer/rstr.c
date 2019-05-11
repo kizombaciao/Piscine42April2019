@@ -42,7 +42,7 @@ void rstr(char *s)
         if (!isblank(s[len]) && flag)
         {
             write(1, s[len], 1); 
-            flag = 0; // clever use of flag for 1st encounter of char   
+            flag = 0; // clever use of flag for 1st encounter of char!!!   
         }
         // skip remaining chars of the word before a blank
         while (s[len] && !isblank(s[len])) { 

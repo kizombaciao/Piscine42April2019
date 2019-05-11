@@ -15,13 +15,22 @@ Example:
 
 $>./union zpadinton "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
 zpadintoqefwjy$
+
 $>./union ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
 df6vewg4thras$
+
 $>./union "rien" "cette phrase ne cache rien" | cat -e
 rienct phas$
+
+// you loop through each of the two string and only print those that haven't been printed yet
+// apply the vf[(int)str[i]] trick!
+
 $>./union | cat -e
 $
+
 $>
+
 $>./union "rien" | cat -e
 $
+
 $>

@@ -1,5 +1,6 @@
 #include <unistd.h>
 
+// HARD TO FOLLOW THIS VERISON!!!
 int		not_seen_before(char *s, int max_pos, char c) {
 	int i; // check if that char has appeared upto the index
 	i = -1;

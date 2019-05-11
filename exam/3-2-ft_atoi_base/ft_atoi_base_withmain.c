@@ -20,6 +20,7 @@ int		isvalid(char c, int base)
 	char digits[17] = "0123456789abcdef";
 	char digits2[17] = "0123456789ABCDEF";
 
+	// going backward is simply easier
 	while (base--) // will there be a loop when base equal zero???
 		if (digits[base] == c || digits2[base] == c)
 			return (1);
@@ -49,8 +50,9 @@ int		ft_atoi_base(const char *str, int str_base)
 	sign = (*str == '-') ? -1 : 1; // sign is equal to -1 or +1
 	(*str == '-' || *str == '+') ? ++str : 0; // elegant code
 	
+	// uses two function calls!!!
 	while (isvalid(*str, str_base))
-		result = result * str_base + value_of(*str++); // key formula
+		result = result * str_base + value_of(*str++); 
 	return (result * sign);
 }
 

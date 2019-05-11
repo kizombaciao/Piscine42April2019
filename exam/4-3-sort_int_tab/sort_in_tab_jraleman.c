@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 
+// USE THIS ONE!!! BUT STILL NEED TO UNDERSTAND WHAT IS SORT IN-PLACE???
 void	sort_int_tab(int *tab, unsigned int size)
 {
 	int				tmp;

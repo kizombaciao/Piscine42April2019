@@ -22,3 +22,8 @@ unsigned char sb(unsigned char oct)
     return((oct >> 4) | (oct << 4));
 }
 */
+
+char sb(char oct)
+{
+	return (oct >> 4) | (oct << 4);
+}

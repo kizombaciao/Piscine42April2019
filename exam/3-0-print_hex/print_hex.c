@@ -27,7 +27,7 @@ void    print_hex(int n)
     if (n >= 16)
         print_hex(n / 16); // recursion
     n = n % 16;
-    n += n < 10 ? '0' : 'a' - 10; // to cut off # between 10 and 15
+    n += n < 10 ? '0' : 'a' - 10; // to cut off # between 10 and 15, like ((n - 10) + 'a')
     write(1, &n, 1);
     //write(1, "\n", 1);
 }

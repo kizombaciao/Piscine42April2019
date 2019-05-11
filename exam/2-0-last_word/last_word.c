@@ -6,6 +6,7 @@ int		ft_isblank(char c) // modularize
 		return (1);
 	return (0);
 }
+
 int		main(int ac, char **av)
 {
 	if (ac == 2)  // given no error statements required
@@ -13,7 +14,7 @@ int		main(int ac, char **av)
 		while (*av[1]) // get to the end of the string
 			av[1]++; // note, av[1]++
 
-		av[1]--; // now decrement from the end
+		av[1]--; // decrement by 1 from the end, given overshoot
 
 		while (ft_isblank(*av[1])) // ignore spaces and tabs, end of the word
 			av[1]--;

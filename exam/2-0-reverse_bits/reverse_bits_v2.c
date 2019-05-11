@@ -1,3 +1,5 @@
+
+
 int        ft_pow(int nb, int pow)
 {
     if (pow == 0)

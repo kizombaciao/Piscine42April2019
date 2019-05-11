@@ -3,12 +3,14 @@
 void	ft_putchar(char c) {
 	write(1, &c, 1);
 }
+
 // note, how short putnbr can be!
 void	ft_putposnbr(int n) {
 	if (n > 9)
 		ft_putposnbr(n / 10);
 	ft_putchar(n % 10 + '0');
 }
+
 // note, how short atoi can be!
 int		ft_atoi_nc(char *s) {
 	int		r;
@@ -17,6 +19,7 @@ int		ft_atoi_nc(char *s) {
 		r = r * 10 + *s++ - '0';
 	return (r);
 }
+
 // trick: to check if prime
 int is_prime(int n) {
 	int i;
@@ -26,6 +29,7 @@ int is_prime(int n) {
 			return (0); // not a prime
 	return (1); // a prime, since no divisor was found
 }
+
 void	add_prime_sum(int n) {
 	int	i;
 	int	count;
@@ -47,3 +51,13 @@ int		main(int ac, char **av) {
 	write(1, "\n", 1);
 	return (1);
 }
+
+/*
+i = 2;
+while (i <= n)
+{
+	if (is_prime(i))
+		count += i;
+	i++;
+}
+*/

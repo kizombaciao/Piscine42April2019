@@ -21,3 +21,6 @@ typedef struct      s_list
     void            *data;
 }                   t_list;
 $>
+
+// https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/
+// https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/

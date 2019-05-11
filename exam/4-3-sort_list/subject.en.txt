@@ -30,3 +30,12 @@ int ascending(int a, int b)
 {
 	return (a <= b);
 }
+
+// Bubble Sort
+// https://www.geeksforgeeks.org/bubble-sort/
+// https://www.geeksforgeeks.org/c-program-bubble-sort-linked-list/
+
+
+// Merge Sort is the best
+// https://www.geeksforgeeks.org/merge-sort-for-linked-list/
+// https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/

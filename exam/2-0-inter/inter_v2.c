@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
+// THIS VERSION DOES NOT WORK BECAUSE IT DOES NOT PRESERVE THE ORDER!!!
 void solve(char *str1, char *str2) { // note, passed as single pointer
 	int vf[128]; // because 128 ascii
 	int	i;

@@ -5,7 +5,6 @@ void putnbr(int n)
     if (n > 9) {
         putnbr(n / 10);
     }
-    
 }
 
 int is_prime(int n)

@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <unistd.h>
 
-// easier version to understand
+// you loop through each of the two string and only print those that haven't been printed yet
+// apply the vf[(int)str[i]] trick!
+   
+// easier version to understand but not correct!!!
 int main(int ac, char **av)
 {
     int vf[128];

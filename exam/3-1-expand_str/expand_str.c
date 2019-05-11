@@ -17,6 +17,8 @@ void	expand_str(char *s) {
         }
         //printf("\n111c:  i = %d    wc = %d", i, wc);
     }
+
+	// when you see a space, add 3 spaces and loop till you see next char
     i = 0;
 	while (s[i])
 	{

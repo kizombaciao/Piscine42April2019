@@ -45,7 +45,7 @@ void	epurstr(char *s) {
     // note, how *(s+1) is used for 2nd condition.
     while (len--)
 	{    
-		if (!ft_isblank(*s) || (*(s + 1) && !ft_isblank(*(s + 1))))
+		if (!ft_isblank(*s) || (*(s + 1) && !ft_isblank(*(s + 1)))) // KEY TRICK!!!
             write(1, s, 1);
         s++;
 	}
