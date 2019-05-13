@@ -1,6 +1,5 @@
 // https://www.thecrazyprogrammer.com/2017/02/flood-fill-algorithm-in-c.html
 
-// BELOW CODE DOES NOT WORK!!!
 // YOUTUBE, MYCODESCHOOL, RECURSION
 
 #include <stdio.h>

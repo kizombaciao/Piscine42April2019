@@ -33,14 +33,12 @@ void bin3(int o)
     char c1 = '1';
     char c0 = '0';
 
-    i = 128;
+    i = 128; // i = 1 << 8;
     while (i >>= 1)
         if (o & i)
             ft_putchar(c1);
         else
-        {
             ft_putchar(c0);
-        }
 }
 
 int main(void) 

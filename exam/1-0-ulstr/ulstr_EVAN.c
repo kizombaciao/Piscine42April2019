@@ -22,3 +22,13 @@ int		main(int ac, char **av)
 	write(1, "\n", 1);						//Don't forget your newline!
 	return (0);
 }
+
+
+/*
+
+XOR Arithmetic:
+How does 65 ^ 32 get you from 'A' to 'a', 
+given that 65 is 0100 0001 and 32 is 0010 0000.
+Wouldn't XOR be 1100 0000, which is 96 and not 97 ('a')?
+
+*/

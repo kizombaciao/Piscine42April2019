@@ -19,6 +19,7 @@ void solve(char *str1, char *str2) { // note, passed as single pointer
         i++;
 	}
 	
+	// it doesn't appear to handle repeated chars
     i = 0; // assign 2 if it has also appeared in str1
 	while (str1[i]) {
 		if (vf[(int)str1[i]] == 1) // now if it also appeared in str1

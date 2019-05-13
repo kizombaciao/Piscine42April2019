@@ -11,9 +11,7 @@ int ft_strlen(char *s)
 
 	i = 0;
 	while (s[i])
-	{
 		i++;
-	}
 	return (i);
 }
 
@@ -27,14 +25,14 @@ void last_word(char *s)
 	int i;
 	int len;
 
-	len = ft_strlen(s);
+	len = ft_strlen(s); // find word length
 	i = --len;
-	while (s[i] && is_sp(s[i]))
+	while (s[i] && is_sp(s[i])) // remove spaces
 		i--;
-	while (s[i] && !is_sp(s[i]))
+	while (s[i] && !is_sp(s[i])) // get to the front of the last word
 		i--;
 	i++;
-	while (s[i] && !is_sp(s[i]))
+	while (s[i] && !is_sp(s[i])) // print last word
 	{
 		ft_putchar(s[i]);
 		i++;

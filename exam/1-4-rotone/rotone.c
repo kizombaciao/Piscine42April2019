@@ -26,15 +26,15 @@ int		main(int ac, char **av)
 	return (0);
 }
 
+/*
 void ttt()
 {
-    
     while (*av[1]) {
         if (*av[1] != 'z') {
             c = *av[1] + 1;
         } else {
             c = 'a';
         }
-    }
-    
+    }  
 }
+*/
