@@ -29,3 +29,5 @@ $>
 $>./rostring | cat -e
 $
 $>
+
+// doesn't explain what to do if there are 2 strings ???

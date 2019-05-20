@@ -26,3 +26,12 @@ int			main(int argc, char *argv[])
 	printf("\n");
 	return (0);
 }
+
+void phex(int n)
+{
+	char h[] = "0123456789abcdef";
+
+	if (n >= 16)
+		phex(n / 16);
+	printf("%c", h[n % 16]);	
+}

@@ -30,3 +30,4 @@ void deleteNode(struct Node **head_ref, int key)
     free(temp);  // Free memory 
 } 
 
+// https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/

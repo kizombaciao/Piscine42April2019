@@ -18,18 +18,12 @@ int ft_atoi(const char *str)
 
     i = 0;
     while (ft_is_space(str[i]))
-    {
         i++;
-    }
     sign = 1;
     if (str[i] == '-')
-    {
         sign = -1;
-    }
     if (str[i] == '-' || str[i] == '+')
-    {
         i++;
-    }
     nb = 0;
     while (str[i] != '\0' && (str[i] >= '0' && str[i] <= '9'))
     {

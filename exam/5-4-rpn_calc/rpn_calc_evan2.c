@@ -1,3 +1,5 @@
+// THIS VERSION WORKS !!!
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,10 +35,10 @@ int	rpn_calc(char *str)
 	{
 		if (IS_DIGIT(*str) || (*str == '-' && IS_DIGIT(*(str + 1))))
 		{
-			num[++i] = atoi(str);
+			num[++i] = atoi(str); // atoi only returns the first digit here!
 			if (*str == '-')
 				++str;
-			while (*str && IS_DIGIT(*str))
+			while (*str && IS_DIGIT(*str)) // ???
 				++str;
 		}
 		else if (IS_OP(*str) && i > 0)

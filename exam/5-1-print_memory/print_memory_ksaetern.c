@@ -39,7 +39,7 @@ void	print_memory(const void *addr, size_t size)
 				print_hex(tab[i + j]);
 			else
 				write(1, "  ", 2);
-			if (j != 0 && j % 2 == 1)
+			if (j != 0 && j % 2 == 1) // why if j=0, j%2 would ever equal 1 ???
 				write(1, " ", 1);
 			j++;
 		}
@@ -52,4 +52,13 @@ void	print_memory(const void *addr, size_t size)
 		}
 		write(1, "\n", 1);
 	}
+}
+
+int		main(void)
+{
+	int	tab[10] = {0, 23, 150, 255,
+	              12, 16,  21, 42};
+
+	print_memory(tab, sizeof(tab));
+	return (0);
 }

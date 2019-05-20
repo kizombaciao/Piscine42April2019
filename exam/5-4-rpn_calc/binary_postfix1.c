@@ -52,7 +52,7 @@ void s_push(int num)
 int s_pop()
 {
     s_top--;
-    return(stack[s_top++]);
+    return(stack[s_top++]); // NOT SURE IF THIS IS CORRECT ???
 }
 
 // -1 if operator // +1 if alphabet

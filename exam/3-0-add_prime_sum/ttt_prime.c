@@ -1,6 +1,7 @@
 
 // recursion
-void putnbr(int n)
+// simpler because only positive n
+void putnbr(int n) 
 {
     if (n > 9) {
         putnbr(n / 10);
@@ -24,14 +25,10 @@ void add_prime(int n)
     int i;
     int count;
     count = 0;
-    if (n == 1) {
+    if (n == 1)
         count = 0;
-    }
-    while (++i <= n) {
-        if (is_prime(i)) {
+    while (++i <= n)
+        if (is_prime(i))
             count += i;
-        }
-    }
-    
-    
+	putnbr(c);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rpn_calc.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: angavrel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cchao <cchao@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/06 16:36:28 by angavrel          #+#    #+#             */
-/*   Updated: 2016/12/06 16:36:30 by angavrel         ###   ########.fr       */
+/*   Updated: 2019/05/13 15:35:01 by cchao            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,5 @@ int		is_digit(int c);
 int		is_space(int c);
 
 #endif
+
+// Linked List, because you don't know how long the array might be!

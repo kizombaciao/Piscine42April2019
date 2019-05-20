@@ -6,13 +6,11 @@ void fprime(int n)
 	int i;
 
 	if (n < 1)
-	{
 		return ;
-	}
+
 	if (n == 1)
-	{
 		printf("1");
-	}
+
 	i = 2;
 	while (i <= n)
 	{
@@ -22,9 +20,7 @@ void fprime(int n)
 			n = n / i;
 			// if still greater than smallest prime
 			if (n >= 2) 
-			{
 				printf("*");
-			}
 			i = 1;
 		}
 		i++;
